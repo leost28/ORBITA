@@ -1,0 +1,95 @@
+.heroVideo{
+    width: 100%;
+    filter: saturate(50%);
+    filter: grayscale(50%);
+
+}
+
+.video{
+    width: 100%;
+}
+   
+.paddingHeader{
+    padding-top:20px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    margin-left: 25%;
+    
+   
+}
+
+form{
+    border: 1px solid rgb(0, 153, 255);
+    color: white;
+    background-color: black;
+    padding: 10px; 
+    
+  
+}
+
+h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button1{
+
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border:2px solid rgb(0, 153, 255);;
+    margin-top: 20px;
+}
+
+.button1:hover{
+
+   
+    background-color: rgb(0, 153, 255);
+
+}
+
+.button{
+
+    width: 100%;
+    background-color:  rgb(0, 153, 255);;
+    color: white;
+    font-weight: bold;
+    border:2px solid rgb(0, 153, 255);;
+    margin-top: 20px;
+}
+
+
+.form-control{
+    border: 2px solid rgb(0, 153, 255);
+}
+
+.error{
+    color: tomato;
+    font-size: 13px;
+}
+
+.registroContainer{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 300px);
+    width: 100%;
+    padding-top: 150px;
+}
+
+/* Responsive movil*/
+
+@media(max-width: 50em){
+    .video{
+        filter: brightness(0%);
+    }
+
+    .container{
+        margin-left: 20px;
+        z-index: 3;
+
+    }
+
+}

@@ -1,0 +1,11 @@
+<agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker *ngFor="let evento of arrEventos" [latitude]="evento.latitud" [longitude]="evento.longitud">
+        <agm-info-window>
+            <p>{{evento.nombre_evento}}</p>
+            <p>{{evento.descripcion}}</p>
+            <p>{{evento.localizacion}}</p>
+            <p>{{evento.fecha_evento}}</p>
+            <p>{{evento.categoria}}</p>
+        </agm-info-window>
+    </agm-marker>
+</agm-map>

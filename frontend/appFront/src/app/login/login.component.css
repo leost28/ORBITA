@@ -1,0 +1,132 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+
+.heroVideo{
+    width: 100%;
+    }
+
+.video{
+    width: 100%;
+    filter: grayscale(60%);
+    filter: brightness(60%);
+  
+}
+
+.loginContainer{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 150px);
+    width: 100%;
+}
+.paddingHeader{
+    padding-top: 100px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    margin-left: 35%;
+}
+
+.form_user{
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(0, 153, 255);
+    padding: 10px;
+}
+
+.form_local{
+    background-color: black;
+    color: black;
+    border: 2px solid rgb(0, 153, 255);
+    padding: 10px;
+    color: white;
+}
+
+
+.registrar p{
+    margin-bottom:5px;
+    font-size: 15px;
+} 
+
+.registrar{
+    font-style: italic;
+}
+
+.pulsaRegistro{
+    cursor: pointer;
+    font-style: normal;
+    width: 30%;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 3px;
+    width: 53%;
+}
+
+.pulsaRegistro:hover{
+    background-color: rgb(0, 153, 255);
+    transition: 3s;
+}
+
+
+.error{
+    color: red;
+    text-align: left;
+    font-size: 16px;
+}
+
+.button{
+    width: 100%;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    font-weight: bold;
+    border:2px solid rgb(0, 153, 255);
+    margin-top: 20px;
+}
+
+.form-control{
+    border: 2px solid rgb(0, 153, 255);
+}
+
+.mostrar .btn-primary{
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.mostrar #local{
+    margin-bottom: 10px;
+    border: 2px solid rgb(0, 153, 255);
+    background-color: black;
+}
+
+.mostrar #local:hover{
+
+    background-color: rgb(0, 153, 255)
+}
+
+
+#subLocal{
+    color: white;
+    background-color: rgb(0, 153, 255);
+}
+
+.mostrar #usuario:hover{
+    background-color:rgb(0, 153, 255);
+}
+
+#usuario{
+    background-color: black;
+    border: 2px solid rgb(0, 153, 255);
+}
+
+/* Responsive movil*/
+
+@media(max-width: 50em){
+    .video{
+        filter: brightness(0%);
+    }
+
+    .container{
+        margin-left: 20px;
+        z-index: 3;
+    }
+}
+

@@ -1,0 +1,37 @@
+
+
+.btn{
+    background-color: var(--primary-color);
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    color: white;
+}
+
+.contenedorEventos{
+
+    padding: 30px;
+    color: white;
+}
+
+input{
+    margin-bottom: 10px;
+}
+.error{
+    color: tomato;
+    font-size: 13px;
+}
+
+h3{
+    background-color: white;
+    height: 40px;
+    color: black;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}

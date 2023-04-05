@@ -1,0 +1,91 @@
+<div class="loginContainer">
+    <div class="container col-12 col-md-4 paddingHeader">
+        <!-- LOGIN USUARIO -->
+        <div class="mostrar" *ngIf="isHide">
+
+            <button (click)="changeForm()" class="btn btn-primary button" id="usuario">Soy un local de eventos
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            <form [formGroup]="formulario_usuario" (ngSubmit)="onSubmitUser()" class="form_user text-center row">
+                <p>Login para usuarios</p>
+                <div class="mb-3 col-12 col-md-6">
+                    <label class="form-label">Email usuario</label>
+                    <input type="email" class="form-control" formControlName="email" placeholder="Email del usuario">
+                    <p class="error" *ngIf="checkErrorUser('email', 'required')">
+                        * El email es requerido
+                    </p>
+                    <p class="error" *ngIf="checkErrorUser('email', 'pattern')">
+                        * El email debe tener formato correcto
+                    </p>
+                </div>
+
+                <div class="mb-3 col-12 col-md-6">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" formControlName="password" placeholder="Password">
+                    <p class="error" *ngIf="checkErrorUser('password', 'required')">
+                        * El password es requerido
+                    </p>
+                </div>
+
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-primary button" value="Enviar">
+                </div>
+
+                <div class="registrar">
+                    <p> ¿Aún no te has unido a la órbita?</p>
+                    <p class="pulsaRegistro" [routerLink]="['/registro']">Regístrate ahora</p>
+                </div>
+                <div class="error" *ngIf=" error !== '' ">
+                    {{error}}
+                </div>
+            </form>
+        </div>
+
+        <!-- LOGIN LOCAL -->
+        <div class="mostrar" *ngIf="!isHide">
+            <button (click)="changeForm()" class="btn btn-primary button" id="local">Soy un usuario
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            <form [formGroup]="formulario_local" (ngSubmit)="onSubmitLocal()" class="form_local text-center row">
+                <p>Login para locales</p>
+                <div class="mb-3 col-12 col-md-6">
+                    <label class="form-label">Usuario local</label>
+                    <input type="text" class="form-control" formControlName="usuario_local"
+                        placeholder="Usuario del local">
+                    <p class="error" *ngIf="checkErrorLocal('usuario_local', 'required')">
+                        * El usuario es requerido
+                    </p>
+                </div>
+
+                <div class="mb-3 col-12 col-md-6">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" formControlName="password" placeholder="Password">
+                    <p class="error" *ngIf="checkErrorLocal('password', 'required')">
+                        * El password es requerido
+                    </p>
+                </div>
+
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-primary button" id="subLocal" value="Enviar">
+                </div>
+
+                <div class="registrar">
+                    <p> ¿Aún no te has unido a la órbita?</p>
+                    <p class="pulsaRegistro" [routerLink]="['/registro']">Regístrate ahora</p>
+                </div>
+                <div class="error" *ngIf=" error !== '' ">
+                    {{error}}
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="heroVideo">
+        <video class="video" autoplay loop type="video/mp4">
+            <source src="../../assets/VIDEOS/Lights - 8675.mp4" type="video/mp4" />
+        </video>
+
+    </div>
+
+</div>

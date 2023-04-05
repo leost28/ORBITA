@@ -1,0 +1,21 @@
+<div class="table">
+    <table class="table">
+        <thead>
+            <tr class="hidden">
+
+                <th>Fecha</th>
+                <th>Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let evento of arrEventos">
+                <td>
+                    {{evento.fecha_evento}}
+                </td>
+                <td>
+                    {{evento.nombre_evento}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

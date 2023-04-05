@@ -1,0 +1,45 @@
+.contenedorEventos{
+    width: 450px;
+    margin-left: 195px;
+    padding-bottom: 40px;
+}
+
+.tituloEventos{
+    margin: 6px 130px;
+    color: black;
+    background-color: white;
+    margin: 0 auto;
+    width: 90%; 
+    border-radius: 20px;
+
+}
+
+.footerEventos{
+    margin: 6px 130px;
+    color: white;
+    background-color: white;
+    margin: 0 auto;
+    width: 90%; 
+    padding: 10px;
+
+}
+
+.tituloEventos>h2{
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.listaEventos{
+    margin-top: 30px;
+}
+
+.evento{
+    width: 90%;
+    margin: 0 auto;
+    color:white;
+    border: 1px solid white;
+    padding: 10px;
+   
+}
+

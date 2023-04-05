@@ -1,0 +1,21 @@
+<div class="tituloEventos">
+    <h2><strong>EVENTOS</strong></h2>
+</div>
+
+<div class="listaEventos" *ngFor="let evento of arrEventos">
+
+
+    <div class="evento">
+        <h3>{{evento.nombre_evento}}</h3>
+        <p>{{evento.descripcion}}</p>
+        <p>{{evento.localizacion}}</p>
+        <p>{{evento.fecha_evento}}</p>
+        <p>{{evento.categoria}}</p>
+        <div>
+            <button class="btn btn-dark" (click)="mostrarEvento(evento.id)">Mostrar en el mapa</button>
+            <button class="btn btn-dark m-2" (click)="agregarEventosAgenda(evento.id)">Agregar evento a orbita</button>
+            <button class="btn btn-dark" (click)="recuperarEventos()">Volver a mostrar los eventos</button>
+        </div>
+
+    </div>
+</div>

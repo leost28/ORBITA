@@ -1,0 +1,21 @@
+<div class="table">
+    <table class="table">
+        <thead>
+            <tr class="hidden">
+
+                <th>Nombre Evento</th>
+                <th>Fecha Evento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let userevent of arrUserEvents">
+                <td>
+                    {{userevent.nombre_evento}}
+                </td>
+                <td>
+                    {{userevent.fecha_evento}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,15 @@
+.container{
+    margin: 0 auto;
+}
+
+
+/* Responsive movil*/
+
+
+@media(max-width: 64.75em){
+    .body{
+        background-color: black;
+        height: 100vh;
+        position: relative;
+    }
+}

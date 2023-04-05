@@ -1,0 +1,174 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+
+/* CONTENEDOR PRINCIPAL */
+.containerPerfil{
+    /* background-image: url(../../assets/IMAGENES/bg.jpg); */
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+
+}
+
+
+/* CONTENEDOR USUARIO */
+
+.perfilLocal{
+    color: white;
+    width: 50%;
+    margin-right: 40px;
+    margin-left: -60px;
+    /* border: 3px solid white; */
+    z-index: 1;
+    /* padding-bottom: 40px; */
+    border: 1px solid white;
+
+}
+
+.nombre{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.nombre>h2{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.foto{
+    
+    margin: 0px auto;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    color: black;
+}
+
+.panel{
+    display: flex;
+    padding-top: 25px;
+}
+
+.localNombreFoto{
+    width: 30%;
+    padding-left: 20px;
+}
+
+
+.nombreLocal{
+    width: 100%;
+    color: white;
+
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    height: 40px;
+    /* margin-left: 250px; */
+}
+
+.descripcion{
+    width: 70%;
+    padding-left: 50px;
+}
+
+.descripcion>h3{    
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    /* align-items: center;
+    justify-content: center; */
+
+    height: 40px;
+}
+
+.descripcion>p{
+    text-align: center;
+}
+
+
+.panel2{
+    margin-top: 50px;
+    padding: 10px;
+}
+
+
+.table  {
+    color: white;
+}
+
+.containerPerfil{
+    display: flex;
+    padding: 100px;
+    
+
+}
+
+.perfil{
+    margin-left: 0px;
+}
+
+
+.galeriaImagenes{
+    display: flex;
+
+}
+
+/* CONTENEDOR MAPA */
+
+.containerBuscador{
+    display: flex;
+    width: 700px;
+    margin-bottom: 40px;
+    
+}
+
+.iconoBuscador{ 
+    border: 1px solid black;
+    background-color: black;
+    padding-top: 6px;
+    padding: 20px;
+}
+
+
+
+
+.fa-search{
+    color: white;
+}
+
+/* CONTENEDOR EVENTOS */
+
+.containerEventos{
+    color: white;
+    /* border: 3px solid white; */
+    z-index: 1;
+    /* padding-bottom: 40px; */
+    width: 50%;
+    margin-right: -60px;
+    margin-left: 40px;
+    border: 1px solid white;
+
+}
+
+
+/* Responsive movil*/
+
+@media(max-width: 60.875em){
+
+    .containerEventos{
+    width: 100%;
+    }
+
+
+
+    }
+    
+    
+    @media(max-width: 85em){
+        .perfilLocal{
+            display: none;
+        }
+        
+    
+    }
