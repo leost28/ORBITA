@@ -1,0 +1,75 @@
+###
+POST http://localhost:3000/api/usuarios/login
+Content-Type: application/json
+
+{
+    "email": "fer@gmail.com",
+    "password": "1234"
+}
+
+###
+POST http://localhost:3000/api/usuarios/registro
+Content-Type: application/json
+
+{
+    "nombre": "Manolo",
+    "primer_apellido": "Lopez",
+    "segundo_apellido": "Martinez",
+    "email": "manolo@gmail.com",
+    "fecha_nacimiento": "01/03/1986",
+    "nombre_usuario": "manue",
+    "password": "abc123"
+}
+
+###
+POST http://localhost:3000/api/locales/login
+Content-Type: application/json
+
+{
+    "usuario_local": "moreria",
+    "password": "moreria"
+}
+
+###
+POST http://localhost:3000/api/locales/registro
+Content-Type: application/json
+
+{
+    "nombre_local": "Gres",
+    "direccion_local": "C. de Fernando el Católico, 86, 28015",
+    "ciudad_local": "Madrid",
+    "descripcion": "Bar de copas",
+    "usuario_local": "andres",
+    "password": "andres123"
+}
+
+###
+POST http://localhost:3000/api/locales/perfilLocal
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2NhbElkIjoxLCJpYXQiOjE2NDAxNjgyMDd9.jDGgQz0pK0ySQYRzzByhGOFYl-VXV2-l49YlGfYs2k8
+
+{
+    "nombre_evento": "DNB NIGHT",
+    "descripcion": "hora: 22:00 - 6:00 Precio: 5€",
+    "localizacion": "Sevilla",
+    "fecha_evento": "28-04-2022",
+    "categoria": "musica electronica"
+}
+
+###
+GET http://localhost:3000/api/eventos/1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/usuarios/events
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvSWQiOjIsImlhdCI6MTY0MDA4NzU1MX0.j5R6qZSXM8F8lz5EDEmzFBVZzrcm48UgLLJ000CeNcU
+
+###
+POST http://localhost:3000/api/eventos
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvSWQiOjIsImlhdCI6MTY0MDA4NzU1MX0.j5R6qZSXM8F8lz5EDEmzFBVZzrcm48UgLLJ000CeNcU
+
+{
+    "id": 2
+}
